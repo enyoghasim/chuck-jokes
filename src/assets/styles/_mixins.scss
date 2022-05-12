@@ -1,0 +1,9 @@
+@mixin flex-center-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@mixin flex {
+  display: flex;
+  @content;
+}

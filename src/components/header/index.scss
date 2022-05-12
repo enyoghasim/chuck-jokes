@@ -1,0 +1,28 @@
+header {
+  background: $navdark;
+  color: $white;
+  .nav-inner {
+    .nav-left {
+      @include flex-center-end;
+      ul {
+        @include flex {
+        }
+        li {
+          list-style: none;
+          a {
+            font-size: 15px;
+            font-weight: 600;
+            color: $white;
+            text-decoration: none;
+          }
+          button {
+            border: none;
+            background: $goldenYellow;
+            color: $white;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
