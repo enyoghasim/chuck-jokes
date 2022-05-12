@@ -4,6 +4,8 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home";
+import SingleJoke from "./pages/single-joke";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,7 +13,8 @@ root.render(
     <App>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/joke/:id" element={<SingleJoke />} />
         </Routes>
       </BrowserRouter>
     </App>
