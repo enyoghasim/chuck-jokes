@@ -6,6 +6,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
+      <section className="hero-section"></section>
       <main>{props.children}</main>
       <Footer />
     </div>

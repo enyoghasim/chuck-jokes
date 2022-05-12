@@ -1,1 +1,10 @@
 @import "./assets/styles/font";
+
+.app {
+  .hero-section {
+    background: url("./assets/images/page-1/bitmap.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

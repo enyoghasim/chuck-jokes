@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: flex-end;
 }
-@mixin flex {
+@mixin flex-center-center {
   display: flex;
+  align-items: center;
+  justify-content: center;
   @content;
 }
