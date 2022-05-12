@@ -1,10 +1,74 @@
 @import "./assets/styles/font";
 
-.app {
+.App {
   .hero-section {
     background: url("./assets/images/page-1/bitmap.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 20rem;
+    text-align: center;
+    @include flex-center-center {
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 72px;
+      color: $goldenYellow;
+      font-weight: normal;
+    }
+    h4 {
+      color: $white;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .input-wrapper {
+      width: 30rem;
+      margin-top: 3rem;
+      input {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        background: transparent;
+        border-radius: 4px;
+        color: white;
+        outline: none;
+        border: 1px solid $white;
+        background-image: url("./assets/images/page-1/search-copy.png");
+        background-repeat: no-repeat;
+        background-position: 97%;
+        padding-right: 3rem;
+        transition: 0.3s;
+        &::placeholder {
+          color: white;
+          opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+          color: white;
+        }
+
+        &::-ms-input-placeholder {
+          color: white;
+        }
+        &:focus {
+          background: $white;
+          background-image: url("./assets/images/page-2/search-copy.png");
+          background-repeat: no-repeat;
+          background-position: 97%;
+          &::placeholder {
+            color: $midBlack;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            color: $midBlack;
+          }
+
+          &::-ms-input-placeholder {
+            color: $midBlack;
+          }
+        }
+      }
+    }
   }
 }
