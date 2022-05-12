@@ -1,11 +1,13 @@
 import "./App.scss";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 function App(props) {
   return (
     <div className="App">
-      <header>header</header>
+      <Header />
       <main>{props.children}</main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 }
