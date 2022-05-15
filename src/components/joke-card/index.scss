@@ -1,10 +1,13 @@
 .card-wrapper-main {
   color: $navdark;
   max-width: 360px;
+  min-height: 264px;
+  width: 100%;
   border-radius: 2px;
   border: solid 1px $whiteTwo;
-  background-color: $whiteOne;
+  background-color: $white;
   padding: 1rem;
+  transition: all 0.5s;
   &:hover {
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
   }
@@ -12,6 +15,22 @@
     font-size: 14px;
     line-height: 1.25;
     font-weight: 600;
+    @include flex-center-start;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+
+      @include background-image-url(
+        "../../assets/images/page-1/green-light-copy-2.png"
+      ) {
+        background-size: contain;
+      }
+
+      margin-right: 5px;
+    }
   }
   .joke-text {
     font-size: 14px;

@@ -1,0 +1,11 @@
+.home-page {
+  .cards-wrapper {
+    @include flex-center-center {
+      flex-wrap: wrap;
+    }
+    div {
+      width: 30%;
+      margin: 10px 0.5%;
+    }
+  }
+}

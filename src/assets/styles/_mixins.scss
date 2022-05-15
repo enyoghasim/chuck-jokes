@@ -10,7 +10,23 @@
   @content;
 }
 
+@mixin flex-center-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @content;
+}
+
 @mixin flex {
   display: flex;
+  @content;
+}
+
+@mixin background-image-url($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @content;
 }

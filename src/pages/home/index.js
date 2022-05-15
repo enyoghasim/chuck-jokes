@@ -5,7 +5,16 @@ import "./index.scss";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <JokeCard.JokeCard />
+      <section className="cards-wrapper">
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+        <JokeCard.JokeCard />
+      </section>
     </div>
   );
 };
