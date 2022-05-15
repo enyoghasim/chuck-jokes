@@ -25,6 +25,10 @@
     .input-wrapper {
       width: 30rem;
       margin-top: 3rem;
+      @include breakpoint-down(md) {
+        width: 100%;
+        padding: 0rem 1rem;
+      }
       input {
         width: 100%;
         padding: 0.9rem 1rem;
@@ -70,5 +74,10 @@
         }
       }
     }
+  }
+  .route-container {
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 1rem;
   }
 }

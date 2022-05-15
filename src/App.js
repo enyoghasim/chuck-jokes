@@ -13,7 +13,7 @@ function App(props) {
           <input type="text" placeholder="How can we make you laugh today?" />
         </div>
       </section>
-      <main>{props.children}</main>
+      <main className="route-container">{props.children}</main>
       <Footer />
     </div>
   );

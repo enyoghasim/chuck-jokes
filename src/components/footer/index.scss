@@ -1,10 +1,38 @@
 footer {
+  background: url("../../assets/images/page-1/bitmap_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 10rem;
   .footer-inner {
-    background: url("../../assets/images/page-1/bitmap_2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 10rem;
     text-align: center;
+
+    max-width: 1025px;
+    margin: 0 auto;
+
+    color: $white;
+    padding: 1rem;
+    @include flex {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h5 {
+      text-align: left;
+    }
+    .submit-joke-btn {
+      background: none;
+      outline: none;
+      border: none;
+      color: $goldenYellow;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 15px;
+      img {
+        margin-left: 10px;
+      }
+    }
   }
 }

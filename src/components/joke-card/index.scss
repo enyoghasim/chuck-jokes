@@ -1,0 +1,20 @@
+.card-wrapper-main {
+  color: $navdark;
+  max-width: 360px;
+  border-radius: 2px;
+  border: solid 1px $whiteTwo;
+  background-color: $whiteOne;
+  padding: 1rem;
+  &:hover {
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
+  }
+  .joke-title {
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+  .joke-text {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
